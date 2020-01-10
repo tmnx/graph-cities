@@ -1,0 +1,123 @@
+TCSS 342 - Data Structures
+
+Assignment 5 Part 2
+
+Modify this file to add answers to the questions below.
+
+Most questions below refer to the Graph.pdf file included with the starter code for this assignment.
+Graph.pdf shows the same graph used in part 1 of this assignment.
+That graph is referred to as G in this document.
+
+For questions 1 to 6 below answer TRUE or FALSE.
+
+Q1.  Graph G is a digraph.
+	FALSE
+
+Q2.  Graph G is acyclic.
+	FALSE
+
+Q3.  Graph G is a weighted graph.
+	TRUE
+
+Q4.  Graph G is a complete graph.
+	FALSE
+
+Q5.  In graph G, vertex 1 (Aberdeen) is reachable from vertex 4 (Kennewick).
+	TRUE
+
+Q6.  Graph G is a connected graph.
+	TRUE
+
+For questions 7 to 10 below provide short answers.
+
+Q7.  What is the cardinality of the vertex set (|V|) in graph G?
+
+	The cardinality of the vertex set in graph G is 10, because there are 10 vertices in the graph.
+
+Q8.  List the vertices that are adjacent to vertex 9 (Tacoma) in graph G.
+
+	The vertices that are adjacent to vertex are vertex 5, vertex 7, and vertex 10.
+	This is because there's an edge connecting each to vertex 9.
+
+Q9.  What is the in-degree of vertex 8 (Spokane) in graph G?
+
+	The in-degree of vertex 8 in Graph G is 3.
+
+Q10. What is the cost of the simple path {7, 6, 1} in graph G?
+
+	79 + 95 = 174
+	The cost of the simple path {7, 6, 1} in graph G is 174.
+
+Questions 11 - 14 refer to DFS and BFS
+
+Q11. Show the order in which vertices would be visited by a depth first search (DFS) starting at node 7 (Seattle).
+You may show either the node numbers or the city names.
+
+	DFS order:
+	Seattle
+	Bellingham
+	Port Angeles
+	Aberdeen
+	Olympia
+	Tacoma
+	Yakima
+	Kennewick
+	Spokane
+	Colville
+
+Q12. Which previously studied data structure is used in the implementation of DFS? 
+
+	The data structure that is used in the implementation of DFS is a Stack.
+
+Q13. Show the order in which vertices would be visited by a breadth first search (BFS) starting at node 7 (Seattle).
+You may show either the node numbers or the city names.
+
+	BFS order:
+	Seattle
+	Bellingham
+	Port Angeles
+	Spokane
+	Tacoma
+	Aberdeen
+	Colville
+	Yakima
+	Olympia
+	Kennewick
+
+Q14. Which previously studied data structure is used in the implementation of BFS?
+
+	The data structure that is used in the implementation of BFS is a Queue.
+	
+Question 15 and 16 below refer to the starter code provide with this assignment.
+
+Q15. In your own words, briefly describe the purpose of the minimalPath() method in class WeightedAdjMatrixGraph.
+
+	The purpose of the minimalPath() method in class WeightedAdjMatrixGraph is to get the cheapest path (shortest path) between a starting vertex and an end vertex. This method is useful to find the cheapest path for any 2 vertices in Graph G.
+
+Q16. In your own words, briefly describe the purpose of the floydShortestPaths() method in class WeightedAdjMatrixGraph.
+
+	The purpose of the floydShortestPaths() method in class WeightedAdjMatrixGraph is to get all the shortest distance paths and the data is stored in a 2D array. This method is useful for finding the diameter of the graph.
+
+For questions 17 through 20, match the name of the algorithm to the problem in graph theory it is designed to solve (from the A to F list below).
+You may need to do a bit of research on the Internet to answer these questions. NOTE: below the list of questions is a list of various problems.
+
+Q17. Dijkstra's algorithm.
+	B) Single-source shortest paths (graph without negative edge weights)
+
+Q18. Prim's algorithm.
+	A) Minimum spanning tree
+
+Q19. Kruskal's algorithm
+	A) Minimum spanning tree
+
+Q20. The Floyd-Warshall algorithm
+	E) All pairs shortest paths
+	
+
+Problems in graph theory:
+A) Minimum spanning tree
+B) Single-source shortest paths (graph without negative edge weights)
+C) Single-source shortest paths (graph may include negative edge weights)
+D) Maximum flow in a flow network
+E) All pairs shortest paths
+F) Topological sort
