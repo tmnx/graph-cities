@@ -1,0 +1,2 @@
+# graph-cities
+The program reads the input file and correctly constructs a graph. The program initially display the number of vertices and edges in the graph and the ‘diameter’ of the graph. The program then prompts the user to select a start point. Finally, the program prompts the user to select an end point. After a city is selected, the program display the distance of the shortest path between the selected start and end cities.
